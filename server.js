@@ -23,7 +23,7 @@ app.use((req,res,next)=>{
 // MAINTAINANCE STOP SERVER
 // app.use((req,res,next)=>{
 //     res.render("maintainance");
-//     // next();
+
 // });
 
 app.use(express.static(__dirname+'/public'));
