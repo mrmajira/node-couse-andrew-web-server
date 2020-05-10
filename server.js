@@ -4,7 +4,7 @@ const   express =   require("express"),
 
 let app = express();
 
-
+const port=process.env.PORT || 3000;
 
 
 hbs.registerPartials(__dirname+"/views/partials");
@@ -72,7 +72,7 @@ app.get("/*",(req,res)=>{
         errorMessage:"page not found"
     });
 })
-app.listen(3000,()=>{
-    console.log("Server listening on port: 3000");
+app.listen(port,()=>{
+    console.log(`Server listening on port: ${port}`);
     
 });
